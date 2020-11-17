@@ -7,6 +7,6 @@ function filterProductByQulity(list, id) {
 
 //ES6
 function filterProductByQulityES6(list, id) {
-	var result = list.filter(list => list.qulity > id && list.isDelete == false);
+	var result = list.find(list => list.qulity > id && list.isDelete == false);
 	return result;
 }

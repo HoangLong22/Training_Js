@@ -7,6 +7,6 @@ function filterProductById(id, list) {
 
 //ES6
 function filterProductByIdES6(list, id) {
-    var result = list.filter(list => list.id == id);
-    return result[0].name;
+    var result = list.find(list => list.id == id);
+    return result.name;
 }
