@@ -14,17 +14,9 @@ function filterProductBySaleDates(list) {
 
 //ES6
 function filterProductBySaleDates_ES6(list){
-        var result = [];
-        var date = new Date().toLocaleDateString();
-        
-        list.map(list => { if (list.qulity > 0 && list.saleDate >= date) {
-                var lists = [list.id, list.name ];
-                result.push(lists);
-            }
-        }
-           
-        );
-        return result;
+    var date = new Date().toLocaleDateString(); 
+    var result = list.filter(list =>  list.qulity > 0 && list.saleDate >= date);
+        lists = result.map(list => [list.id, list.name ]);
+        return lists;
 }
-
 
