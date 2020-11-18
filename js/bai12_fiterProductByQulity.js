@@ -1,8 +1,12 @@
 function filterProductByQulity(list, id) {
-        var result = list.filter(function (item) {
-            return item.qulity > id && item.isDelete == false;
-        });
-        return result;
+    var result = [];
+    list.forEach(function(item) {
+        if (item.qulity > 0 && item.isDelete == false) {
+            result.push(item);
+        }
+    });
+    return result;
+   
 }
 
 //ES6

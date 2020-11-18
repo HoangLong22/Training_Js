@@ -1,8 +1,11 @@
 function isHaveProductCategoryId(list, categoryId) {
-    var result = list.some(function (item) {
+    var result = list.find(function (item) {
         return item.categoryId == categoryId;
     });
-    return result;
+    if (result){
+    	return true;
+    }
+    return false;
 }
 
 //ES6

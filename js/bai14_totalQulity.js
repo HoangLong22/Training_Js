@@ -1,9 +1,10 @@
 function totalQulity(list) {
-    var total = list.reduce(function (accumulator, currentValue) {
-        return accumulator + currentValue.qulity;
-    }, 0);
-    return total;
-}
+    var total = 0;
+        list.forEach(function(item) {
+            total += item.qulity;
+        });
+        return total;
+    }
 
 //ES6
 function totalQulityES6(list) {

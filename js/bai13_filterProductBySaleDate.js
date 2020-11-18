@@ -1,7 +1,10 @@
 function filterProductBySaleDate(list) {
 	var date = new Date().toLocaleDateString();
-    var result = list.filter(function (item) {
-        return item.saleDate >= date && item.isDelete == false;
+    var result = [];
+     list.forEach(function (item) {
+       if (item.qulity > 0 && item.isDelete == false) {
+            result.push(item);
+        }
     });
     return result;
 }

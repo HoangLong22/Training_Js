@@ -1,8 +1,11 @@
 function filterProductById(id, list) {
-    var filter = list.filter(function(item) {
-         return item.id == id;
+    var result = [];
+    list.forEach(function(item) {
+        if (item.id == id) {
+            result.push(item);
+        }
     });
-    return filter[0].name;
+    return result[0].name;
 }
 
 //ES6

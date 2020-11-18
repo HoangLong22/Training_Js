@@ -17,7 +17,7 @@ function filterProductBySaleDates_ES6(list){
         var result = [];
         var date = new Date().toLocaleDateString();
         
-        list.forEach(list => { if (list.qulity > 0 && list.saleDate >= date) {
+        list.map(list => { if (list.qulity > 0 && list.saleDate >= date) {
                 var lists = [list.id, list.name ];
                 result.push(lists);
             }

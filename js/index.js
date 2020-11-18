@@ -1,7 +1,7 @@
 $().ready(function () {
     var list = listProduct(10);
     console.log(list);
-    console.log(filterProductById(5, list));
+    console.log(filterProductById(6, list));
     console.log(filterProductByIdES6(list, 9));
     console.log(filterProductByQulity(list, 0));
     console.log(filterProductByQulityES6(list, 0));
